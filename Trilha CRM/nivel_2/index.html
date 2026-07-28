@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP - Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Controle de Estoque</h2>
+        <div class="busca-container">
+            <input type="text" id="busca-produto" placeholder="Buscar produto por nome...">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Produto</th>
+                    <th>Categoria</th>
+                    <th>Código</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo">
+                <tr><td>Teclado Mecânico RGB</td><td>Periféricos</td><td>PER-001</td></tr>
+                <tr><td>Monitor 24" IPS</td><td>Monitores</td><td>MON-012</td></tr>
+                <tr><td>Mouse Sem Fio Logitech</td><td>Periféricos</td><td>PER-005</td></tr>
+                <tr><td>Placa Mãe B550</td><td>Hardware</td><td>HDW-023</td></tr>
+                <tr><td>Memória RAM 16GB DDR4</td><td>Hardware</td><td>HDW-045</td></tr>
+                <tr><td>Headset Gamer 7.1</td><td>Áudio</td><td>AUD-008</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

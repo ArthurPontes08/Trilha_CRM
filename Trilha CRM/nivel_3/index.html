@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP - Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Faturas Pendentes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Valor</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo">
+                <tr data-cliente="Empresa Alpha Ltda" data-vencimento="15/08/2026" data-status="Atrasado">
+                    <td>#1044</td>
+                    <td>R$ 4.500,00</td>
+                    <td><button class="btn-detalhes">Ver Detalhes</button></td>
+                </tr>
+                <tr data-cliente="Tech Solutions S/A" data-vencimento="20/08/2026" data-status="No prazo">
+                    <td>#1045</td>
+                    <td>R$ 12.300,00</td>
+                    <td><button class="btn-detalhes">Ver Detalhes</button></td>
+                </tr>
+                <tr data-cliente="Comércio Beta" data-vencimento="25/08/2026" data-status="No prazo">
+                    <td>#1046</td>
+                    <td>R$ 850,00</td>
+                    <td><button class="btn-detalhes">Ver Detalhes</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Estrutura da Janela Modal -->
+    <div id="modal-detalhes" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <h3>Detalhes da Fatura</h3>
+            <div class="dados-fatura">
+                <p><strong>Cliente:</strong> <span id="modal-cliente"></span></p>
+                <p><strong>Vencimento:</strong> <span id="modal-vencimento"></span></p>
+                <p><strong>Status:</strong> <span id="modal-status"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
